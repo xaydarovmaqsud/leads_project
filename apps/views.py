@@ -19,6 +19,7 @@ class LeadCreateAPIView(generics.CreateAPIView):
     queryset = Lead.objects.all()
     serializer_class = LeadSerializer
     parser_classes = [MultiPartParser, FormParser]
+    permission_classes = [AllowAny]
 
     def perform_create(self, serializer):
         lead = serializer.save()

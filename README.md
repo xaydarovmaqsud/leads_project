@@ -53,7 +53,7 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 ### 4. Set up environment variables
-Rename the `.env.example` file to `.env` and adjust the keys inside to your own.
+Rename the `.env.example` file to `.env` and adjust the keys inside to your own. Create a database in **PostgreSQL** and specify the settings in `.env`
 ### 5. Run migrations
 
 ```bash
@@ -71,5 +71,4 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 ### 8. Access the API
-
-
+http://127.0.0.1:8000/swagger/
