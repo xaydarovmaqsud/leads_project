@@ -71,4 +71,5 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 ### 8. Access the API
-http://127.0.0.1:8000/swagger/
+local: http://127.0.0.1:8000/swagger/
+prod: http://65.109.134.142/swagger/
