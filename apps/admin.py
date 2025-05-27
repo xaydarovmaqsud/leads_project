@@ -8,7 +8,3 @@ class LeadAdmin(admin.ModelAdmin):
     list_filter = ('status', 'created_at')
     search_fields = ('first_name', 'last_name', 'email')
 
-
-from rest_framework.authtoken.models import Token
-
-admin.site.register(Token)
